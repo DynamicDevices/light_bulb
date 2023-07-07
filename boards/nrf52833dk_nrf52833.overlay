@@ -25,14 +25,14 @@
 &pinctrl {
 	pwm0_default_alt: pwm0_default_alt {
 		group1 {
-			psels = <NRF_PSEL(PWM_OUT1, 0, 16)>;
+			psels = <NRF_PSEL(PWM_OUT1, 0, 8)>;
 			nordic,invert;
 		};
 	};
 
 	pwm0_sleep_alt: pwm0_sleep_alt {
 		group1 {
-			psels = <NRF_PSEL(PWM_OUT1, 0, 16)>;
+			psels = <NRF_PSEL(PWM_OUT1, 0, 8)>;
 			low-power-enable;
 		};
 	};

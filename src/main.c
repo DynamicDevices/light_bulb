@@ -12,6 +12,7 @@
 #include <zephyr/types.h>
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
+#include <zephyr/usb/usb_device.h>
 #include <soc.h>
 #include <zephyr/drivers/pwm.h>
 #include <zephyr/logging/log.h>
@@ -82,6 +83,7 @@
 /* Use onboard led4 to act as a light bulb.
  * The app.overlay file has this at node label "pwm_led3" in /pwmleds.
  */
+// NOTE: We've set this in the overlay for the dongle as LD2 RED for trialling
 #define PWM_DK_LED4_NODE                DT_NODELABEL(pwm_led3)
 
 #if DT_NODE_HAS_STATUS(PWM_DK_LED4_NODE, okay)
