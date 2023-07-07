@@ -526,6 +526,9 @@ int main(void)
 
 	LOG_INF("Starting ZBOSS Light Bulb example");
 
+	/* Enable USB */
+	usb_enable(NULL);
+
 	/* Initialize */
 	configure_gpio();
 	err = settings_subsys_init();
